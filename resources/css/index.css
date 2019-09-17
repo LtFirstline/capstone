@@ -1,10 +1,13 @@
 /* Universal Styles */
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
 }
 
 .flex-container {
@@ -27,6 +30,8 @@ header.flex-container {
     align-items: center;
     z-index: 2;
     top: 0;
+    background-color: white;
+    border-bottom: 2px solid black;
 }
 
 header img {
@@ -82,11 +87,14 @@ main {
     justify-content: flex-start;
 }
 
-.start img {
-    flex-shrink: 4;
+.start .img-container{
     width: 60%;
+    padding: 32px 24px;
+}
+.start img {
+    width: 100%;
     height: auto;
-    margin: 32px 24px;
+    /* margin: 32px 24px; */
     align-content: center;
     flex-shrink: 2;
 }
@@ -97,10 +105,7 @@ main {
     justify-content: center;
 }
 
-
-
 .learn h1 {
-    text-align: left;
     color: grey;
     /* opacity: .8; */
     font-size: 54px;
@@ -108,7 +113,6 @@ main {
 }
 
 .learn h3 {
-    text-align: left;
     color: grey;
     font-size: 28px;
     line-height: 1.4;
@@ -125,4 +129,101 @@ main {
     opacity: .8;
     border-radius: 15px;
     margin-top: 50px;
+    text-align: center;
+}
+
+/* middle section */
+
+.quotes {
+    display: inline-flex;
+}
+
+.practicing {
+    font-size: 40px;
+    opacity: .7;
+    font-weight: bolder;
+}
+
+.quote {
+    font-size: 24px;
+    opacity: .6;
+}
+
+.quote-citation {
+    font-size: 18px;
+    opacity: .6;
+}
+
+.left-container {
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+    padding: 32px 24px;
+    border-right: 2px solid lightgray;
+    justify-content: space-between;
+}
+
+.left-container img {
+    width: 100%;
+}
+
+.left-container-text {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.box-container {
+    width: 40%;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.box-text{
+    padding-bottom: 8px;
+    width: 65%;
+    text-overflow: wrap;
+    padding-left: 32px;
+
+}
+
+.Orientation {
+    border-bottom: 4px double lightgray;
+}
+
+.speaker {
+    background-color: darkgray;
+}
+
+.box {
+    height: auto;
+    width: 100%;
+    padding: 16px;
+    align-items: center;
+}
+
+.box img {
+    width: 35%;
+    height: auto;
+}
+
+.box div {
+    width: 65%;
+}
+
+.box h1 {
+    opacity: .6;
+    font-size: 40px;
+}
+
+.box p {
+    font-size: 24px;
+    line-height: 2;
+    opacity: .7;
+}
+
+.box a {
+    color: blue;
+    font-weight: bold;
 }
