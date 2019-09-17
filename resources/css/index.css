@@ -31,13 +31,13 @@ header.flex-container {
 
 header img {
     width: auto;
-    height: 54px;
+    height: 32px;
     margin-left: 24px;
 }
 
 .colmar,
 .academy {
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .colmar {
@@ -65,4 +65,41 @@ nav span {
     padding: 20px 8px;
     font-size: 22px;
     opacity: .8;
+}
+
+/* main section 1 */
+
+main {
+    width: 100%;
+    padding-top: 64px;
+}
+
+.start {
+    width: 100%;
+    background-color: lightcyan;
+    margin-top: 64px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.img-container {
+    width: 60%;
+    height: auto;
+    margin: 32px 24px;
+    align-content: center;
+}
+
+.img-container img {
+    width: 60%;
+}
+
+.learn {
+    flex-direction: column;
+    width: 25%
+}
+
+.button {
+    display: block;
+    background-color: darkcyan;
+    padding: 8px;
 }
