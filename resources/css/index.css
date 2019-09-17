@@ -1,0 +1,68 @@
+/* Universal Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header */
+
+header.flex-container {
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+    top: 0;
+}
+
+header img {
+    width: auto;
+    height: 54px;
+    margin-left: 24px;
+}
+
+.colmar,
+.academy {
+    font-size: 32px;
+}
+
+.colmar {
+    font-weight: bold;
+}
+
+.academy {
+    font-weight: lighter;
+    color: gray;
+}
+
+span a{
+    color: black;
+}
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+    right: 16px;
+    position: relative;
+}
+
+nav span {
+    display: inline-block;
+    padding: 20px 8px;
+    font-size: 22px;
+    opacity: .8;
+}
