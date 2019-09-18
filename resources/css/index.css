@@ -253,7 +253,7 @@ main {
     padding-bottom: 16px;
     font-size: 40px;
     opacity: .7;
-    text-height: 1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -273,14 +273,16 @@ main {
 .learning-container h1 {
     opacity: .6;
     padding: 8px 16px;
-    font-size: 24px;    
+    font-size: 32px;    
 }
 
 .learning-container h3 {
     opacity: .6;
     font-weight: lighter;
     padding-left: 16px;
+    padding-right: 32px;
     line-height: 1.4;  
+    font-size: 24px;
 }
 
 .learning-end {
@@ -290,4 +292,96 @@ main {
 #courses {
     margin: 0;
     padding-left: 16px;
+}
+
+/* Thesis */
+
+.thesis {
+    border-bottom: 2px solid lightgray;
+}
+
+.thesis-title {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 40px;
+    opacity: .7;
+    line-height: 1;
+}
+
+.video-container {
+    width: 60%;
+    flex-direction: column;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-text h1{
+    opacity: .8;
+}
+
+.video-text p {
+    opacity: .6;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.right-container{
+    width: 40%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+}
+
+.right-container img {
+    width: 35%;
+}
+
+.right-text {
+    width: 65%;
+    padding-left: 16px;
+
+}
+
+.right-text h1{
+    opacity: .8;
+    font-size: 32px;
+}
+
+
+.right-text p{
+    font-size: 24px;
+    line-height: 1.6;
+    opacity: .7;
+}
+.fisma {
+    border-bottom: 4px double lightgray;
+}
+
+/* footer */
+.copyright {
+    padding-left: 24px;
+    text-align: left;
+    display: inline-block;
+    opacity: .6;
+}
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+    right: 16px;
+    position: relative;
+}
+
+nav span {
+    display: inline-block;
+    padding: 20px 8px;
+    font-size: 22px;
+    opacity: .6;
 }
