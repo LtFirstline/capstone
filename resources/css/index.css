@@ -17,8 +17,10 @@ body {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
+
 
 
 /* header */
@@ -72,6 +74,11 @@ nav span {
     opacity: .8;
 }
 
+.sign-in {
+    font-weight: bold;
+    opacity: 1;
+}
+
 /* main section 1 */
 
 main {
@@ -94,7 +101,6 @@ main {
 .start img {
     width: 100%;
     height: auto;
-    /* margin: 32px 24px; */
     align-content: center;
     flex-shrink: 2;
 }
@@ -118,18 +124,17 @@ main {
     line-height: 1.4;
 }
 
-
 .button {
     display: block;
     background-color: darkcyan;
     padding: 8px;
     font-size: 20px;
-    color: white;
     font-weight: bold;
     opacity: .8;
     border-radius: 15px;
     margin-top: 50px;
     text-align: center;
+    transition: all .75s ease .2s;
 }
 
 /* middle section */
@@ -193,7 +198,8 @@ main {
 }
 
 .speaker {
-    background-color: darkgray;
+    border-top: 4px double lightgray;
+
 }
 
 .box {
@@ -201,6 +207,11 @@ main {
     width: 100%;
     padding: 16px;
     align-items: center;
+    transition: background-color .75s ease-in .2s;
+}
+
+.box:hover {
+    background-color: darkgray;
 }
 
 .box img {
@@ -219,11 +230,64 @@ main {
 
 .box p {
     font-size: 24px;
-    line-height: 2;
+    line-height: 1.6;
     opacity: .7;
 }
 
 .box a {
     color: blue;
     font-weight: bold;
+}
+
+/* Learning Section */
+
+.learning {
+    width: 100%;
+    background-color: lightcyan;
+    padding: 32px 72px;
+    justify-content: space-evenly;
+}
+
+.startlearning {
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 40px;
+    opacity: .7;
+    text-height: 1;
+    margin: 0;
+}
+
+.learning-container {
+    margin: 16px;
+    width: 30%;
+    background: white;
+    height: auto;
+}
+
+.learning-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.learning-container h1 {
+    opacity: .6;
+    padding: 8px 16px;
+    font-size: 24px;    
+}
+
+.learning-container h3 {
+    opacity: .6;
+    font-weight: lighter;
+    padding-left: 16px;
+    line-height: 1.4;  
+}
+
+.learning-end {
+    padding-bottom: 24px;
+}
+
+#courses {
+    margin: 0;
+    padding-left: 16px;
 }
